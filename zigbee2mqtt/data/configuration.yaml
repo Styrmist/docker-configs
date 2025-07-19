@@ -5,4 +5,5 @@ mqtt:
 serial:
     port: /dev/ttyUSB0
 homeassistant: true
-    
+frontend: true
+permit_join: true
