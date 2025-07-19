@@ -1,0 +1,20 @@
+name: zigbee2mqtt
+services:
+  zigbee2mqtt:
+    image: koenkk/zigbee2mqtt
+    # image: ghcr.io/koenkk/zigbee2mqtt
+    container_name: zigbee2mqtt
+    depends_on:
+      - nanomq
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - /run/udev:/run/udev:ro
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+    environment:
+      - TZ=${TZ}
+    privileged: true
+        
+        
+        
