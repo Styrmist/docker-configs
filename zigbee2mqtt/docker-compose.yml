@@ -13,6 +13,8 @@ services:
     environment:
       - TZ=${TZ}
     privileged: true
+    ports:
+      - "8080:8080"
         
         
         
