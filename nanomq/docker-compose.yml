@@ -1,10 +1,12 @@
 
 name: nanomq-full
 services:
-    nanomq:
-        container_name: nanomq
-        ports:
-            - 1883:1883
-            - 8083:8083
-            - 8883:8883
-        image: emqx/nanomq:latest-full
+  nanomq:
+    container_name: nanomq
+    ports:
+        - 1883:1883
+        - 8083:8083
+        - 8883:8883
+    image: emqx/nanomq:latest-full
+    volumes:
+    - ./nanomq.conf:/etc/nanomq.conf
