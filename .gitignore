@@ -2,7 +2,7 @@
 .env
 
 # Ignore all config folders in subdirectories
-*/config/*
+# */config/*
 
 # Ignore specific config folders not matching the above pattern
 readarr/config-audio-books/*
