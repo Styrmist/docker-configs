@@ -1,0 +1,12 @@
+# Ignore environment files
+.env
+
+# Ignore all config folders in subdirectories
+*/config/*
+
+# Ignore specific config folders not matching the above pattern
+readarr/config-audio-books/*
+vaultwarden/vw-data/*
+
+# Ignore not-in-use services
+not-in-use/*
