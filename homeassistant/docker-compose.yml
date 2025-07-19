@@ -9,8 +9,5 @@ services:
     restart: unless-stopped
     privileged: true
     network_mode: host
-    depends_on:
-      - nanomq
-      - zigbee2mqtt
     # devices:
       # - /dev/ttyUSB0:/dev/ttyUSB0
